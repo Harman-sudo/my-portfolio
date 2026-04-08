@@ -47,8 +47,8 @@ export default function Contact() {
     {
       icon: <Linkedin size={18} />,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/harman-saini-2b7b98256',
-      href: 'https://www.linkedin.com/in/harman-saini-2b7b98256',
+        value: 'linkedin.com/in/harmanpreet-singh-online',
+        href: 'https://www.linkedin.com/in/harmanpreet-singh-online/',
       accent: 'blue',
     },
     {

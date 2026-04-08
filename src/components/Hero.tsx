@@ -157,11 +157,12 @@ export default function Hero() {
             <div className="relative w-64 h-[340px] sm:w-72 sm:h-[380px]">
               {/* Gradient border */}
               <div className="absolute -inset-[2px] rounded-2xl bg-gradient-to-br from-cyan-500 via-purple-500/50 to-cyan-400/30" />
-              <div className="relative w-full h-full rounded-2xl overflow-hidden bg-[var(--bg-surface)]">
+              <div className="relative w-64 h-[340px] sm:w-72 sm:h-[380px] rounded-2xl overflow-hidden bg-[var(--bg-surface)]">
                 <Image
                   src="/myimg.jpeg"
                   alt="Harmanpreet Singh"
                   fill
+                  sizes="(max-width: 640px) 256px, 288px"
                   className="object-cover object-center"
                   priority
                 />

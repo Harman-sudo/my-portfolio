@@ -15,7 +15,6 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    // Compose mailto link with form data
     const mailtoLink = `mailto:preetharman2012003@gmail.com?subject=${encodeURIComponent(
       form.subject || `Portfolio Contact from ${form.name}`
     )}&body=${encodeURIComponent(
@@ -35,20 +34,20 @@ export default function Contact() {
       label: 'Email',
       value: 'preetharman2012003@gmail.com',
       href: 'mailto:preetharman2012003@gmail.com',
-      accent: 'cyan',
+      accent: 'blue',
     },
     {
       icon: <Phone size={18} />,
       label: 'Phone',
       value: '+91-7626970357',
       href: 'tel:+917626970357',
-      accent: 'emerald',
+      accent: 'blue',
     },
     {
       icon: <Linkedin size={18} />,
       label: 'LinkedIn',
-        value: 'linkedin.com/in/harmanpreet-singh-online',
-        href: 'https://www.linkedin.com/in/harmanpreet-singh-online/',
+      value: 'linkedin.com/in/harmanpreet-singh-online',
+      href: 'https://www.linkedin.com/in/harmanpreet-singh-online/',
       accent: 'blue',
     },
     {
@@ -56,15 +55,13 @@ export default function Contact() {
       label: 'Location',
       value: 'Patiala, Punjab, India',
       href: null,
-      accent: 'purple',
+      accent: 'indigo',
     },
   ]
 
   const accentMap: Record<string, string> = {
-    cyan:    'text-cyan-600 dark:text-cyan-400    border-cyan-500/30    bg-cyan-500/5',
-    emerald: 'text-emerald-600 dark:text-emerald-400 border-emerald-500/30 bg-emerald-500/5',
-    blue:    'text-blue-600 dark:text-blue-400    border-blue-500/30    bg-blue-500/5',
-    purple:  'text-purple-600 dark:text-purple-400  border-purple-500/30  bg-purple-500/5',
+    blue:   'text-blue-600 dark:text-blue-400   border-blue-500/25   bg-blue-500/5',
+    indigo: 'text-indigo-600 dark:text-indigo-400 border-indigo-500/25 bg-indigo-500/5',
   }
 
   return (
@@ -131,7 +128,7 @@ export default function Contact() {
             </div>
 
             {/* Availability badge */}
-            <div className="flex items-center gap-2.5 text-sm text-emerald-400 border border-emerald-500/20 bg-emerald-500/5 px-4 py-3 rounded-xl">
+            <div className="flex items-center gap-2.5 text-sm text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 bg-emerald-500/5 px-4 py-3 rounded-xl">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-dot" />
               <span>Currently available for new opportunities</span>
             </div>
@@ -154,7 +151,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     placeholder="Your name"
-                    className="w-full bg-[var(--bg-input)] border border-[var(--c-border1)] text-[var(--c-text1)] rounded-lg px-4 py-2.5 text-sm placeholder:text-[var(--c-text5)] focus:outline-none focus:border-cyan-500/60 transition-colors"
+                    className="w-full bg-[var(--bg-input)] border border-[var(--c-border1)] text-[var(--c-text1)] rounded-lg px-4 py-2.5 text-sm placeholder:text-[var(--c-text5)] focus:outline-none focus:border-blue-500/60 transition-colors"
                   />
                 </div>
                 <div>
@@ -166,7 +163,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     placeholder="you@company.com"
-                    className="w-full bg-[var(--bg-input)] border border-[var(--c-border1)] text-[var(--c-text1)] rounded-lg px-4 py-2.5 text-sm placeholder:text-[var(--c-text5)] focus:outline-none focus:border-cyan-500/60 transition-colors"
+                    className="w-full bg-[var(--bg-input)] border border-[var(--c-border1)] text-[var(--c-text1)] rounded-lg px-4 py-2.5 text-sm placeholder:text-[var(--c-text5)] focus:outline-none focus:border-blue-500/60 transition-colors"
                   />
                 </div>
               </div>
@@ -178,7 +175,7 @@ export default function Contact() {
                   value={form.subject}
                   onChange={handleChange}
                   placeholder="Job Opportunity / Collaboration / Research"
-                  className="w-full bg-[var(--bg-input)] border border-[var(--c-border1)] text-[var(--c-text1)] rounded-lg px-4 py-2.5 text-sm placeholder:text-[var(--c-text5)] focus:outline-none focus:border-cyan-500/60 transition-colors"
+                  className="w-full bg-[var(--bg-input)] border border-[var(--c-border1)] text-[var(--c-text1)] rounded-lg px-4 py-2.5 text-sm placeholder:text-[var(--c-text5)] focus:outline-none focus:border-blue-500/60 transition-colors"
                 />
               </div>
 
@@ -191,14 +188,14 @@ export default function Contact() {
                   required
                   rows={5}
                   placeholder="Tell me about the opportunity or project..."
-                  className="w-full bg-[#0a0f1e] border border-slate-700 text-slate-200 rounded-lg px-4 py-2.5 text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-500/60 transition-colors resize-none"
+                  className="w-full bg-[var(--bg-input)] border border-[var(--c-border1)] text-[var(--c-text1)] rounded-lg px-4 py-2.5 text-sm placeholder:text-[var(--c-text5)] focus:outline-none focus:border-blue-500/60 transition-colors resize-none"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={loading || sent}
-                className="w-full flex items-center justify-center gap-2 py-3 bg-cyan-500 hover:bg-cyan-400 disabled:opacity-60 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_rgba(6,182,212,0.4)]"
+                className="w-full flex items-center justify-center gap-2 py-3 bg-blue-600 hover:bg-blue-500 disabled:opacity-60 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_rgba(37,99,235,0.35)]"
               >
                 {sent ? (
                   <>
@@ -206,7 +203,7 @@ export default function Contact() {
                   </>
                 ) : loading ? (
                   <>
-                    <div className="w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin" />
+                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                     Sending...
                   </>
                 ) : (

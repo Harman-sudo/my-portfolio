@@ -8,13 +8,13 @@ const RESEARCH_AREAS = [
     icon: <BrainCircuit size={20} />,
     title: 'Machine Learning',
     desc: 'Supervised and unsupervised learning algorithms, model optimization, and evaluation strategies for real-world systems.',
-    accent: 'cyan',
+    accent: 'blue',
   },
   {
     icon: <Bot size={20} />,
     title: 'Agentic AI Systems',
     desc: 'Design and coordination of autonomous multi-agent architectures for complex task automation and decision-making.',
-    accent: 'purple',
+    accent: 'indigo',
   },
   {
     icon: <Network size={20} />,
@@ -26,15 +26,13 @@ const RESEARCH_AREAS = [
     icon: <Lightbulb size={20} />,
     title: 'Computer Vision',
     desc: 'Human pose estimation, real-time video analysis, and vision-based feedback systems using OpenCV and MediaPipe.',
-    accent: 'emerald',
+    accent: 'indigo',
   },
 ]
 
 const colorMap: Record<string, { text: string; border: string; bg: string; icon: string }> = {
-  cyan:    { text: 'text-cyan-600 dark:text-cyan-400',    border: 'border-cyan-500/20',    bg: 'bg-cyan-500/5',    icon: 'bg-cyan-500/15' },
-  purple:  { text: 'text-purple-600 dark:text-purple-400',  border: 'border-purple-500/20',  bg: 'bg-purple-500/5',  icon: 'bg-purple-500/15' },
-  blue:    { text: 'text-blue-600 dark:text-blue-400',    border: 'border-blue-500/20',    bg: 'bg-blue-500/5',    icon: 'bg-blue-500/15' },
-  emerald: { text: 'text-emerald-600 dark:text-emerald-400', border: 'border-emerald-500/20', bg: 'bg-emerald-500/5', icon: 'bg-emerald-500/15' },
+  blue:   { text: 'text-blue-600 dark:text-blue-400',   border: 'border-blue-500/20',   bg: 'bg-blue-500/5',   icon: 'bg-blue-500/12' },
+  indigo: { text: 'text-indigo-600 dark:text-indigo-400', border: 'border-indigo-500/20', bg: 'bg-indigo-500/5', icon: 'bg-indigo-500/12' },
 }
 
 export default function Research() {
@@ -63,20 +61,20 @@ export default function Research() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative rounded-2xl border border-purple-500/25 bg-gradient-to-br from-purple-500/5 via-[var(--bg-surface)] to-cyan-500/5 p-8 mb-10 overflow-hidden"
+          className="relative rounded-2xl border border-indigo-500/25 bg-gradient-to-br from-indigo-500/5 via-[var(--bg-surface)] to-blue-500/5 p-8 mb-10 overflow-hidden"
         >
           {/* Background glow */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-cyan-600/8 rounded-full blur-2xl" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-600/8 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-600/6 rounded-full blur-2xl" />
 
           {/* Corner brackets */}
-          <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-purple-500/40" />
-          <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-purple-500/40" />
-          <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-cyan-500/30" />
-          <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-cyan-500/30" />
+          <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-indigo-500/35" />
+          <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-indigo-500/35" />
+          <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-blue-500/25" />
+          <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-blue-500/25" />
 
           <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
-            <div className="p-4 rounded-2xl bg-purple-500/15 border border-purple-500/25 text-purple-400 shrink-0">
+            <div className="p-4 rounded-2xl bg-indigo-500/12 border border-indigo-500/25 text-indigo-500 dark:text-indigo-400 shrink-0">
               <FlaskConical size={32} />
             </div>
             <div className="flex-1">
@@ -86,15 +84,15 @@ export default function Research() {
                   ● In Progress
                 </span>
               </div>
-              <div className="flex items-center gap-2 text-purple-600 dark:text-purple-300 font-medium mb-1">
+              <div className="flex items-center gap-2 text-indigo-600 dark:text-indigo-300 font-medium mb-1">
                 <GraduationCap size={15} />
                 Punjabi University, Patiala
               </div>
               <p className="text-[var(--c-text4)] text-sm mb-3">2025 – Present &nbsp;·&nbsp; Part-Time</p>
               <p className="text-[var(--c-text3)] leading-relaxed">
-                Research focused on the intersection of <span className="text-cyan-400 font-medium">Machine Learning</span>,{' '}
-                <span className="text-purple-400 font-medium">Agentic AI Systems</span>, and{' '}
-                <span className="text-blue-400 font-medium">Intelligent Industrial Applications</span>.
+                Research focused on the intersection of <span className="text-blue-500 dark:text-blue-400 font-medium">Machine Learning</span>,{' '}
+                <span className="text-indigo-500 dark:text-indigo-400 font-medium">Agentic AI Systems</span>, and{' '}
+                <span className="text-blue-500 dark:text-blue-400 font-medium">Intelligent Industrial Applications</span>.
                 Exploring how autonomous AI agents and advanced ML models can be applied to real-world
                 industrial monitoring, decision support, and automation problems.
               </p>
@@ -142,7 +140,7 @@ export default function Research() {
                 school: 'Punjabi University, Patiala',
                 period: '2025 – Present',
                 gpa: null,
-                color: 'purple',
+                color: 'indigo',
                 icon: '🔬',
               },
               {
@@ -150,7 +148,7 @@ export default function Research() {
                 school: 'Thapar Institute of Engineering & Technology, Patiala',
                 period: '2023 – 2025',
                 gpa: '8.94 / 10',
-                color: 'cyan',
+                color: 'blue',
                 icon: '🎓',
               },
               {
@@ -158,7 +156,7 @@ export default function Research() {
                 school: 'Maharaja Ranjit Singh Punjab Technical University, Bathinda',
                 period: '2020 – 2023',
                 gpa: '8.2 / 10',
-                color: 'blue',
+                color: 'indigo',
                 icon: '📚',
               },
             ].map((edu) => {
@@ -173,7 +171,7 @@ export default function Research() {
                   <div className="text-right shrink-0">
                     <div className="text-xs text-[var(--c-text4)] font-mono">{edu.period}</div>
                     {edu.gpa && (
-                      <div className="text-xs text-emerald-400 font-bold mt-0.5">CGPA {edu.gpa}</div>
+                      <div className="text-xs text-blue-600 dark:text-blue-400 font-bold mt-0.5">CGPA {edu.gpa}</div>
                     )}
                   </div>
                 </div>

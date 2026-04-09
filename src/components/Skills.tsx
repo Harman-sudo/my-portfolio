@@ -16,7 +16,7 @@ const CATEGORIES: SkillCategory[] = [
     title: 'Programming Languages',
     subtitle: 'Core coding proficiency',
     icon: <Code2 size={18} />,
-    accent: 'cyan',
+    accent: 'blue',
     skills: [
       { name: 'JavaScript', level: 88 },
       { name: 'Python',     level: 85 },
@@ -42,7 +42,7 @@ const CATEGORIES: SkillCategory[] = [
     title: 'Databases',
     subtitle: 'Storage & query design',
     icon: <Database size={18} />,
-    accent: 'emerald',
+    accent: 'indigo',
     skills: [
       { name: 'PostgreSQL',              level: 85 },
       { name: 'Oracle DB',               level: 72 },
@@ -53,7 +53,7 @@ const CATEGORIES: SkillCategory[] = [
     title: 'AI & Machine Learning',
     subtitle: 'Models, vision & NLP',
     icon: <BrainCircuit size={18} />,
-    accent: 'purple',
+    accent: 'indigo',
     skills: [
       { name: 'TensorFlow',   level: 75 },
       { name: 'Scikit-learn', level: 78 },
@@ -67,7 +67,7 @@ const CATEGORIES: SkillCategory[] = [
     title: 'Tools & DevOps',
     subtitle: 'Development workflow',
     icon: <Wrench size={18} />,
-    accent: 'amber',
+    accent: 'blue',
     skills: [
       { name: 'Git / GitHub',   level: 88 },
       { name: 'Visual Studio',  level: 85 },
@@ -79,7 +79,7 @@ const CATEGORIES: SkillCategory[] = [
     title: 'Industrial & SCADA',
     subtitle: 'Domain-specific systems',
     icon: <Activity size={18} />,
-    accent: 'rose',
+    accent: 'indigo',
     skills: [
       { name: 'SCADA/HMI Design',         level: 82 },
       { name: 'Real-time Dashboards',     level: 88 },
@@ -91,12 +91,8 @@ const CATEGORIES: SkillCategory[] = [
 ]
 
 const accentMap: Record<string, { text: string; bar: string; border: string; bg: string; icon: string }> = {
-  cyan:    { text: 'text-cyan-600 dark:text-cyan-400',    bar: 'bg-cyan-500',    border: 'border-cyan-500/20',    bg: 'bg-cyan-500/5',    icon: 'bg-cyan-500/15' },
-  blue:    { text: 'text-blue-600 dark:text-blue-400',    bar: 'bg-blue-500',    border: 'border-blue-500/20',    bg: 'bg-blue-500/5',    icon: 'bg-blue-500/15' },
-  emerald: { text: 'text-emerald-600 dark:text-emerald-400', bar: 'bg-emerald-500', border: 'border-emerald-500/20', bg: 'bg-emerald-500/5', icon: 'bg-emerald-500/15' },
-  purple:  { text: 'text-purple-600 dark:text-purple-400',  bar: 'bg-purple-500',  border: 'border-purple-500/20',  bg: 'bg-purple-500/5',  icon: 'bg-purple-500/15' },
-  amber:   { text: 'text-amber-600 dark:text-amber-400',   bar: 'bg-amber-500',   border: 'border-amber-500/20',   bg: 'bg-amber-500/5',   icon: 'bg-amber-500/15' },
-  rose:    { text: 'text-rose-600 dark:text-rose-400',    bar: 'bg-rose-500',    border: 'border-rose-500/20',    bg: 'bg-rose-500/5',    icon: 'bg-rose-500/15' },
+  blue:   { text: 'text-blue-600 dark:text-blue-400',   bar: 'bg-blue-600',   border: 'border-blue-500/20',   bg: 'bg-blue-500/5',   icon: 'bg-blue-500/12' },
+  indigo: { text: 'text-indigo-600 dark:text-indigo-400', bar: 'bg-indigo-500', border: 'border-indigo-500/20', bg: 'bg-indigo-500/5', icon: 'bg-indigo-500/12' },
 }
 
 function SkillBar({ name, level, barClass }: { name: string; level?: number; barClass: string }) {

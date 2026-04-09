@@ -27,7 +27,7 @@ const PROJECTS: Project[] = [
     status: 'Production',
     year: '2025',
     icon: <Activity size={22} />,
-    accent: 'cyan',
+    accent: 'blue',
     description:
       'Full-featured SCADA platform for real-time industrial operations monitoring, event management, and automated substation reporting. Deployed in enterprise environments with live field device integration.',
     architecture: 'Angular Client ──▶ SignalR Hub ──▶ ASP.NET Core API ──▶ PostgreSQL + CouchDB ──▶ Industrial Field Devices',
@@ -49,7 +49,7 @@ const PROJECTS: Project[] = [
     status: 'Completed',
     year: '2024',
     icon: <Bot size={22} />,
-    accent: 'purple',
+    accent: 'indigo',
     description:
       'Autonomous multi-agent system built with CrewAI framework for automating complex multi-step workflows. Agents coordinate task assignment, sequence execution, and data retrieval through REST APIs.',
     architecture: 'CrewAI Orchestrator ──▶ Specialized Agent Pool ──▶ Task Sequencer ──▶ REST API Layer ──▶ Data Sources',
@@ -91,7 +91,7 @@ const PROJECTS: Project[] = [
     status: 'Completed',
     year: '2024',
     icon: <Eye size={22} />,
-    accent: 'emerald',
+    accent: 'indigo',
     description:
       'Real-time computer vision system for exercise posture analysis using MediaPipe pose estimation. Detects incorrect posture and gives corrective feedback based on body-angle thresholds collected from real gym sessions.',
     architecture: 'Webcam Feed ──▶ OpenCV Pipeline ──▶ MediaPipe Pose ──▶ Keypoint Extraction ──▶ Angle Analyzer ──▶ Feedback Engine',
@@ -110,10 +110,8 @@ const accentMap: Record<string, {
   border: string; bg: string; text: string; badge: string;
   typeBadge: string; archBg: string; dot: string;
 }> = {
-  cyan:    { border: 'border-cyan-500/25',    bg: 'bg-cyan-500/5',    text: 'text-cyan-600 dark:text-cyan-400',    badge: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border-emerald-500/30',    typeBadge: 'bg-cyan-500/15 text-cyan-700 dark:text-cyan-300 border-cyan-500/30',    archBg: 'bg-cyan-500/5    border-cyan-500/15',    dot: 'bg-cyan-500' },
-  purple:  { border: 'border-purple-500/25',  bg: 'bg-purple-500/5',  text: 'text-purple-600 dark:text-purple-400',  badge: 'bg-slate-500/15 text-slate-700 dark:text-slate-300 border-slate-500/30',  typeBadge: 'bg-purple-500/15 text-purple-700 dark:text-purple-300 border-purple-500/30',  archBg: 'bg-purple-500/5  border-purple-500/15',  dot: 'bg-purple-500' },
-  blue:    { border: 'border-blue-500/25',    bg: 'bg-blue-500/5',    text: 'text-blue-600 dark:text-blue-400',    badge: 'bg-slate-500/15 text-slate-700 dark:text-slate-300 border-slate-500/30',    typeBadge: 'bg-blue-500/15 text-blue-700 dark:text-blue-300 border-blue-500/30',    archBg: 'bg-blue-500/5    border-blue-500/15',    dot: 'bg-blue-500' },
-  emerald: { border: 'border-emerald-500/25', bg: 'bg-emerald-500/5', text: 'text-emerald-600 dark:text-emerald-400', badge: 'bg-slate-500/15 text-slate-700 dark:text-slate-300 border-slate-500/30', typeBadge: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border-emerald-500/30', archBg: 'bg-emerald-500/5 border-emerald-500/15', dot: 'bg-emerald-500' },
+  blue:   { border: 'border-blue-500/25',   bg: 'bg-blue-500/5',   text: 'text-blue-600 dark:text-blue-400',   badge: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border-emerald-500/30', typeBadge: 'bg-blue-500/15 text-blue-700 dark:text-blue-300 border-blue-500/30',     archBg: 'bg-blue-500/5   border-blue-500/15',   dot: 'bg-blue-600' },
+  indigo: { border: 'border-indigo-500/25', bg: 'bg-indigo-500/5', text: 'text-indigo-600 dark:text-indigo-400', badge: 'bg-slate-500/15 text-slate-700 dark:text-slate-300 border-slate-500/30',      typeBadge: 'bg-indigo-500/15 text-indigo-700 dark:text-indigo-300 border-indigo-500/30', archBg: 'bg-indigo-500/5 border-indigo-500/15', dot: 'bg-indigo-500' },
 }
 
 export default function Projects() {

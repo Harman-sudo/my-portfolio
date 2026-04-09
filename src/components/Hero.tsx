@@ -52,18 +52,18 @@ export default function Hero() {
       <div className="absolute inset-0 hero-grid-bg" />
 
       {/* ── Radial gradient overlays ── */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(6,182,212,0.15),transparent)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_80%,rgba(139,92,246,0.10),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(37,99,235,0.12),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_80%,rgba(99,102,241,0.08),transparent)]" />
 
       {/* ── Ambient orbs ── */}
-      <div className="absolute top-1/4 left-10 w-80 h-80 bg-cyan-600/5 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-10 w-64 h-64 bg-purple-600/6 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/4 left-10 w-80 h-80 bg-blue-600/5 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/4 right-10 w-64 h-64 bg-indigo-600/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
 
       {/* ── Corner decorations ── */}
-      <div className="absolute top-20 left-6 w-14 h-14 border-l-2 border-t-2 border-cyan-500/25" />
-      <div className="absolute top-20 right-6 w-14 h-14 border-r-2 border-t-2 border-cyan-500/25" />
-      <div className="absolute bottom-20 left-6 w-14 h-14 border-l-2 border-b-2 border-purple-500/20" />
-      <div className="absolute bottom-20 right-6 w-14 h-14 border-r-2 border-b-2 border-purple-500/20" />
+      <div className="absolute top-20 left-6 w-14 h-14 border-l-2 border-t-2 border-blue-600/20" />
+      <div className="absolute top-20 right-6 w-14 h-14 border-r-2 border-t-2 border-blue-600/20" />
+      <div className="absolute bottom-20 left-6 w-14 h-14 border-l-2 border-b-2 border-indigo-500/15" />
+      <div className="absolute bottom-20 right-6 w-14 h-14 border-r-2 border-b-2 border-indigo-500/15" />
 
       {/* ── Main two-column layout ── */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-16">
@@ -73,10 +73,10 @@ export default function Hero() {
           <div className="flex-1 text-center lg:text-left max-w-2xl">
 
             {/* Status pill */}
-            <div className="inline-flex items-center gap-2.5 text-xs text-cyan-600 dark:text-cyan-300 border border-cyan-500/30 bg-cyan-500/5 px-4 py-1.5 rounded-full mb-7 font-mono">
+            <div className="inline-flex items-center gap-2.5 text-xs text-blue-700 dark:text-blue-300 border border-blue-500/30 bg-blue-500/5 px-4 py-1.5 rounded-full mb-7 font-mono">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Open to AI & Industrial Engineering Roles
-              <Zap size={11} className="text-cyan-500" />
+              <Zap size={11} className="text-blue-500" />
             </div>
 
             {/* Name */}
@@ -88,9 +88,9 @@ export default function Hero() {
 
             {/* Typing role */}
             <div className="h-9 flex items-center justify-center lg:justify-start mb-5">
-              <span className="text-lg sm:text-xl text-cyan-500 font-mono tracking-wide">
+              <span className="text-lg sm:text-xl text-blue-600 dark:text-blue-400 font-mono tracking-wide">
                 {text}
-                <span className="cursor-blink ml-0.5 inline-block w-0.5 h-5 bg-cyan-500 align-middle" />
+                <span className="cursor-blink ml-0.5 inline-block w-0.5 h-5 bg-blue-600 dark:bg-blue-400 align-middle" />
               </span>
             </div>
 
@@ -98,7 +98,7 @@ export default function Hero() {
             <p className="text-[var(--c-text3)] text-base leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
               Building enterprise SCADA/HMI systems, real-time industrial platforms, and autonomous AI agents.
               Currently pursuing a{' '}
-              <span className="text-purple-500 font-medium">PhD in Computer Science</span> with a focus on Machine Learning.
+              <span className="text-indigo-500 dark:text-indigo-400 font-medium">PhD in Computer Science</span> with a focus on Machine Learning.
             </p>
 
             {/* Stats */}
@@ -115,14 +115,14 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <a
                 href="#projects"
-                className="relative px-7 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-[0_0_25px_rgba(6,182,212,0.5)] overflow-hidden group text-sm"
+                className="relative px-7 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-[0_0_25px_rgba(37,99,235,0.45)] overflow-hidden group text-sm"
               >
                 <span className="relative z-10">View My Work</span>
-                <div className="absolute inset-0 bg-cyan-300 translate-y-full group-hover:translate-y-0 transition-transform duration-200" />
+                <div className="absolute inset-0 bg-blue-500 translate-y-full group-hover:translate-y-0 transition-transform duration-200" />
               </a>
               <a
                 href="#contact"
-                className="px-7 py-3 border border-cyan-500/50 text-cyan-500 hover:bg-cyan-500/10 hover:border-cyan-500 rounded-lg transition-all duration-200 text-sm"
+                className="px-7 py-3 border border-blue-600/50 text-blue-600 dark:text-blue-400 hover:bg-blue-600/10 hover:border-blue-600 rounded-lg transition-all duration-200 text-sm"
               >
                 Get In Touch
               </a>
@@ -133,18 +133,18 @@ export default function Hero() {
           <div className="relative shrink-0 flex items-center justify-center lg:justify-end">
 
             {/* Outer glow pulse ring */}
-            <div className="absolute w-72 h-80 rounded-2xl bg-gradient-to-br from-cyan-500/20 via-purple-500/10 to-cyan-400/5 blur-2xl animate-float" />
+            <div className="absolute w-72 h-80 rounded-2xl bg-gradient-to-br from-blue-600/15 via-indigo-500/8 to-blue-400/5 blur-2xl animate-float" />
 
             {/* Status badges floating around photo */}
             <div className="absolute -top-4 -left-6 hidden lg:flex items-center gap-1.5 text-[10px] text-emerald-700 dark:text-emerald-400 border border-emerald-500/40 bg-[var(--bg-surface)] shadow-sm px-2.5 py-1.5 rounded font-mono">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               SYS_ONLINE
             </div>
-            <div className="absolute -top-4 -right-6 hidden lg:flex items-center gap-1.5 text-[10px] text-purple-700 dark:text-purple-400 border border-purple-500/40 bg-[var(--bg-surface)] shadow-sm px-2.5 py-1.5 rounded font-mono">
+            <div className="absolute -top-4 -right-6 hidden lg:flex items-center gap-1.5 text-[10px] text-indigo-700 dark:text-indigo-400 border border-indigo-500/40 bg-[var(--bg-surface)] shadow-sm px-2.5 py-1.5 rounded font-mono">
               <Cpu size={9} />
               ML_RESEARCH
             </div>
-            <div className="absolute -bottom-4 -left-6 hidden lg:flex items-center gap-1.5 text-[10px] text-cyan-700 dark:text-cyan-400 border border-cyan-500/40 bg-[var(--bg-surface)] shadow-sm px-2.5 py-1.5 rounded font-mono">
+            <div className="absolute -bottom-4 -left-6 hidden lg:flex items-center gap-1.5 text-[10px] text-blue-700 dark:text-blue-400 border border-blue-500/40 bg-[var(--bg-surface)] shadow-sm px-2.5 py-1.5 rounded font-mono">
               <Activity size={9} />
               SCADA_DEV
             </div>
@@ -156,7 +156,7 @@ export default function Hero() {
             {/* Photo frame */}
             <div className="relative w-64 h-[340px] sm:w-72 sm:h-[380px]">
               {/* Gradient border */}
-              <div className="absolute -inset-[2px] rounded-2xl bg-gradient-to-br from-cyan-500 via-purple-500/50 to-cyan-400/30" />
+              <div className="absolute -inset-[2px] rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-500/60 to-blue-400/30" />
               <div className="relative w-64 h-[340px] sm:w-72 sm:h-[380px] rounded-2xl overflow-hidden bg-[var(--bg-surface)]">
                 <Image
                   src="/myimg.jpeg"
@@ -170,12 +170,12 @@ export default function Hero() {
                 <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[var(--bg-main)] via-[var(--bg-main-70)] to-transparent" />
                 <div className="absolute bottom-0 inset-x-0 px-4 py-3">
                   <div className="text-sm font-bold text-[var(--c-heading)]">Harmanpreet Singh</div>
-                  <div className="text-[11px] text-cyan-500 font-mono">AI & Software Engineer</div>
+                  <div className="text-[11px] text-blue-600 dark:text-blue-400 font-mono">AI & Software Engineer</div>
                 </div>
 
                 {/* Corner brackets inside photo */}
-                <div className="absolute top-2 left-2 w-5 h-5 border-l-2 border-t-2 border-cyan-400/60" />
-                <div className="absolute top-2 right-2 w-5 h-5 border-r-2 border-t-2 border-cyan-400/60" />
+                <div className="absolute top-2 left-2 w-5 h-5 border-l-2 border-t-2 border-blue-500/50" />
+                <div className="absolute top-2 right-2 w-5 h-5 border-r-2 border-t-2 border-blue-500/50" />
               </div>
             </div>
           </div>

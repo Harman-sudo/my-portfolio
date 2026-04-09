@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[var(--bg-overlay)] backdrop-blur-xl border-b border-cyan-500/10 shadow-lg shadow-black/10'
+          ? 'bg-[var(--bg-overlay)] backdrop-blur-xl border-b border-blue-600/10 shadow-lg shadow-black/10'
           : 'bg-transparent'
       }`}
     >
@@ -36,11 +36,11 @@ export default function Navbar() {
 
         {/* ── Logo ── */}
         <a href="#home" className="flex items-center gap-2.5 group">
-          <div className="relative w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center font-bold text-white text-sm overflow-hidden">
+          <div className="relative w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center font-bold text-white text-sm overflow-hidden">
             <span className="relative z-10">HS</span>
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
-          <span className="hidden sm:block text-[var(--c-text2)] font-semibold text-sm group-hover:text-cyan-500 transition-colors">
+          <span className="hidden sm:block text-[var(--c-text2)] font-semibold text-sm group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
             Harmanpreet Singh
           </span>
         </a>
@@ -51,10 +51,10 @@ export default function Navbar() {
             <a
               key={href}
               href={href}
-              className="text-[var(--c-text3)] hover:text-cyan-500 text-sm transition-colors duration-200 relative group"
+              className="text-[var(--c-text3)] hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors duration-200 relative group"
             >
               {label}
-              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-cyan-500 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-blue-600 dark:bg-blue-400 transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </div>
@@ -65,21 +65,21 @@ export default function Navbar() {
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
-            className="p-2 rounded-lg border border-[var(--c-border1)] text-[var(--c-text3)] hover:text-cyan-500 hover:border-cyan-500/40 transition-all duration-200"
+            className="p-2 rounded-lg border border-[var(--c-border1)] text-[var(--c-text3)] hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500/40 transition-all duration-200"
           >
             {theme === 'light' ? <Moon size={15} /> : <Sun size={15} />}
           </button>
 
           <a
             href="mailto:preetharman2012003@gmail.com"
-            className="hidden md:flex items-center gap-1.5 text-xs px-3.5 py-1.5 border border-cyan-500/40 text-cyan-500 rounded-md hover:bg-cyan-500/10 hover:border-cyan-500/70 transition-all duration-200"
+            className="hidden md:flex items-center gap-1.5 text-xs px-3.5 py-1.5 border border-blue-600/40 text-blue-600 dark:text-blue-400 rounded-md hover:bg-blue-600/10 hover:border-blue-600/70 transition-all duration-200"
           >
             <Terminal size={12} />
             Hire Me
           </a>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-1.5 text-[var(--c-text3)] hover:text-cyan-500 transition-colors"
+            className="md:hidden p-1.5 text-[var(--c-text3)] hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -89,21 +89,21 @@ export default function Navbar() {
 
       {/* ── Mobile menu ── */}
       {mobileOpen && (
-        <div className="md:hidden bg-[var(--bg-mobile)] backdrop-blur-xl border-t border-cyan-500/10 px-5 py-5">
+        <div className="md:hidden bg-[var(--bg-mobile)] backdrop-blur-xl border-t border-blue-600/10 px-5 py-5">
           <div className="flex flex-col gap-4">
             {NAV_LINKS.map(({ label, href }) => (
               <a
                 key={href}
                 href={href}
                 onClick={() => setMobileOpen(false)}
-                className="text-[var(--c-text3)] hover:text-cyan-500 text-sm transition-colors py-1 border-b border-[var(--c-border2)] last:border-0"
+                className="text-[var(--c-text3)] hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors py-1 border-b border-[var(--c-border2)] last:border-0"
               >
                 {label}
               </a>
             ))}
             <a
               href="mailto:preetharman2012003@gmail.com"
-              className="mt-2 flex items-center gap-2 text-sm text-cyan-500 border border-cyan-500/30 rounded-md px-4 py-2 w-fit"
+              className="mt-2 flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 border border-blue-600/30 rounded-md px-4 py-2 w-fit"
             >
               <Terminal size={14} /> Get In Touch
             </a>

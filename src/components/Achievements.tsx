@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Trophy, Star, Shield, Award } from 'lucide-react'
+import { Trophy, Star, Shield } from 'lucide-react'
 
 const ACHIEVEMENTS = [
   {
@@ -11,7 +11,7 @@ const ACHIEVEMENTS = [
     year: '2023',
     description:
       'Won the inter-college website design competition, demonstrating excellence in UI/UX design, frontend development, and full-stack implementation.',
-    accent: 'amber',
+    accent: 'blue',
     badge: '🏆 Winner',
   },
   {
@@ -21,7 +21,7 @@ const ACHIEVEMENTS = [
     year: '2025',
     description:
       'Completed intensive full-stack training at RBH Solutions covering Angular, ASP.NET Core, PostgreSQL, and real-time systems with a 95% assessment score.',
-    accent: 'cyan',
+    accent: 'blue',
     badge: '⭐ 95% Score',
   },
   {
@@ -31,15 +31,14 @@ const ACHIEVEMENTS = [
     year: '2025',
     description:
       'Contributed key modules to SCADA systems that were deployed in live enterprise production environments, processing real industrial operational data.',
-    accent: 'emerald',
+    accent: 'indigo',
     badge: '🚀 Production',
   },
 ]
 
 const colorMap: Record<string, { text: string; border: string; bg: string; icon: string; badgeBg: string }> = {
-  amber:   { text: 'text-amber-600 dark:text-amber-400',   border: 'border-amber-500/25',   bg: 'bg-amber-500/5',   icon: 'bg-amber-500/15',   badgeBg: 'bg-amber-500/10 border-amber-500/30 text-amber-700 dark:text-amber-300' },
-  cyan:    { text: 'text-cyan-600 dark:text-cyan-400',    border: 'border-cyan-500/25',    bg: 'bg-cyan-500/5',    icon: 'bg-cyan-500/15',    badgeBg: 'bg-cyan-500/10 border-cyan-500/30 text-cyan-700 dark:text-cyan-300' },
-  emerald: { text: 'text-emerald-600 dark:text-emerald-400', border: 'border-emerald-500/25', bg: 'bg-emerald-500/5', icon: 'bg-emerald-500/15', badgeBg: 'bg-emerald-500/10 border-emerald-500/30 text-emerald-700 dark:text-emerald-300' },
+  blue:   { text: 'text-blue-600 dark:text-blue-400',   border: 'border-blue-500/25',   bg: 'bg-blue-500/5',   icon: 'bg-blue-500/12',   badgeBg: 'bg-blue-500/10 border-blue-500/30 text-blue-700 dark:text-blue-300' },
+  indigo: { text: 'text-indigo-600 dark:text-indigo-400', border: 'border-indigo-500/25', bg: 'bg-indigo-500/5', icon: 'bg-indigo-500/12', badgeBg: 'bg-indigo-500/10 border-indigo-500/30 text-indigo-700 dark:text-indigo-300' },
 }
 
 export default function Achievements() {
@@ -106,10 +105,10 @@ export default function Achievements() {
           className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4"
         >
           {[
-            { value: '8.94', label: 'MCA CGPA',        color: 'text-cyan-400' },
-            { value: '8.2',  label: 'BCA CGPA',         color: 'text-blue-400' },
-            { value: '95%',  label: 'Training Score',   color: 'text-emerald-400' },
-            { value: '#1',   label: 'Web Design Award', color: 'text-amber-400' },
+            { value: '8.94', label: 'MCA CGPA',        color: 'text-blue-600 dark:text-blue-400' },
+            { value: '8.2',  label: 'BCA CGPA',         color: 'text-blue-600 dark:text-blue-400' },
+            { value: '95%',  label: 'Training Score',   color: 'text-blue-600 dark:text-blue-400' },
+            { value: '#1',   label: 'Web Design Award', color: 'text-indigo-600 dark:text-indigo-400' },
           ].map(({ value, label, color }) => (
             <div
               key={label}

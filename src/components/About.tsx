@@ -5,21 +5,17 @@ import { motion } from 'framer-motion'
 import { MapPin, GraduationCap, Briefcase, FlaskConical, Cpu, Network } from 'lucide-react'
 
 const HIGHLIGHTS = [
-  { icon: <Briefcase size={15} />,    color: 'cyan',    text: 'Software Engineer @ RBH Solutions' },
-  { icon: <GraduationCap size={15} />, color: 'purple', text: 'PhD CS Researcher — Punjabi University' },
+  { icon: <Briefcase size={15} />,    color: 'blue',   text: 'Software Engineer @ RBH Solutions' },
+  { icon: <GraduationCap size={15} />, color: 'indigo', text: 'PhD CS Researcher — Punjabi University' },
   { icon: <Cpu size={15} />,           color: 'blue',   text: 'SCADA/HMI Systems Developer' },
-  { icon: <FlaskConical size={15} />,  color: 'emerald',text: 'AI & Machine Learning Practitioner' },
-  { icon: <Network size={15} />,       color: 'amber',  text: 'Industrial Automation & Protocol Analysis' },
-  { icon: <MapPin size={15} />,        color: 'rose',   text: 'Patiala, Punjab, India' },
+  { icon: <FlaskConical size={15} />,  color: 'indigo', text: 'AI & Machine Learning Practitioner' },
+  { icon: <Network size={15} />,       color: 'blue',   text: 'Industrial Automation & Protocol Analysis' },
+  { icon: <MapPin size={15} />,        color: 'indigo', text: 'Patiala, Punjab, India' },
 ]
 
 const colorMap: Record<string, string> = {
-  cyan:    'text-cyan-500    border-cyan-500/20    bg-cyan-500/5',
-  purple:  'text-purple-500  border-purple-500/20  bg-purple-500/5',
-  blue:    'text-blue-500    border-blue-500/20    bg-blue-500/5',
-  emerald: 'text-emerald-500 border-emerald-500/20 bg-emerald-500/5',
-  amber:   'text-amber-500   border-amber-500/20   bg-amber-500/5',
-  rose:    'text-rose-500    border-rose-500/20    bg-rose-500/5',
+  blue:   'text-blue-600 dark:text-blue-400   border-blue-500/20   bg-blue-500/5',
+  indigo: 'text-indigo-600 dark:text-indigo-400 border-indigo-500/20 bg-indigo-500/5',
 }
 
 export default function About() {
@@ -52,8 +48,8 @@ export default function About() {
             {/* Profile photo */}
             <div className="relative">
               {/* Outer glow ring */}
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-cyan-500/40 via-purple-500/20 to-cyan-500/10 blur-sm" />
-              <div className="relative w-56 h-72 rounded-2xl overflow-hidden border-2 border-cyan-500/40 glow-cyan">
+              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-blue-600/30 via-indigo-500/15 to-blue-600/8 blur-sm" />
+              <div className="relative w-56 h-72 rounded-2xl overflow-hidden border-2 border-blue-600/35 glow-cyan">
                 <Image
                   src="/myimg.jpeg"
                   alt="Harmanpreet Singh"
@@ -66,7 +62,7 @@ export default function About() {
                 {/* Name overlay at bottom */}
                 <div className="absolute bottom-0 left-0 right-0 px-3 py-2.5 bg-[var(--bg-main-60)] backdrop-blur-sm">
                   <div className="text-xs font-bold text-[var(--c-heading)] leading-none">Harmanpreet Singh</div>
-                  <div className="text-[10px] text-cyan-500 font-mono mt-0.5">AI & Software Engineer</div>
+                  <div className="text-[10px] text-blue-600 dark:text-blue-400 font-mono mt-0.5">AI & Software Engineer</div>
                 </div>
                 {/* corner brackets */}
                 <div className="corner-tl" />
@@ -105,9 +101,9 @@ export default function About() {
           >
             <p className="text-[var(--c-text1)] text-lg font-medium leading-relaxed">
               I&apos;m a Software Engineer with a deep focus on{' '}
-              <span className="text-cyan-500">SCADA/HMI systems</span>,{' '}
-              <span className="text-purple-500">AI agent development</span>, and{' '}
-              <span className="text-blue-500">real-time industrial platforms</span>.
+              <span className="text-blue-600 dark:text-blue-400">SCADA/HMI systems</span>,{' '}
+              <span className="text-indigo-600 dark:text-indigo-400">AI agent development</span>, and{' '}
+              <span className="text-blue-600 dark:text-blue-400">real-time industrial platforms</span>.
             </p>
 
             <p>
@@ -124,15 +120,15 @@ export default function About() {
 
             <p>
               I&apos;m currently pursuing a{' '}
-              <span className="text-purple-500 font-medium">PhD in Computer Science</span> at Punjabi University,
+              <span className="text-indigo-600 dark:text-indigo-400 font-medium">PhD in Computer Science</span> at Punjabi University,
               Patiala, where my research sits at the intersection of Machine Learning and intelligent systems.
-              I hold an MCA from <span className="text-cyan-500 font-medium">Thapar Institute of Engineering & Technology</span>{' '}
-              with a CGPA of <span className="text-emerald-500 font-bold">8.94/10</span>.
+              I hold an MCA from <span className="text-blue-600 dark:text-blue-400 font-medium">Thapar Institute of Engineering & Technology</span>{' '}
+              with a CGPA of <span className="text-blue-700 dark:text-blue-300 font-bold">8.94/10</span>.
             </p>
 
             <p>
-              I&apos;m a <span className="text-amber-500 font-medium">Winner of the Inter-College Website Design Competition 2023</span>{' '}
-              and I completed my full-stack training program with a <span className="text-emerald-500 font-bold">95% score</span>.
+              I&apos;m a <span className="text-indigo-600 dark:text-indigo-400 font-medium">Winner of the Inter-College Website Design Competition 2023</span>{' '}
+              and I completed my full-stack training program with a <span className="text-blue-700 dark:text-blue-300 font-bold">95% score</span>.
             </p>
 
             {/* Core competency tags */}

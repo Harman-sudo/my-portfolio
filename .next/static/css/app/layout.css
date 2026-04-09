@@ -2018,6 +2018,10 @@ body {
     display: inline;
   }
 
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:h-\[380px\] {
     height: 380px;
   }

@@ -129,8 +129,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ── RIGHT: Profile photo ── */}
-          <div className="relative shrink-0 flex items-center justify-center lg:justify-end">
+          {/* ── RIGHT: Profile photo — hidden on mobile, shown on lg+ ── */}
+          <div className="relative shrink-0 hidden lg:flex items-center justify-center lg:justify-end">
 
             {/* Outer glow pulse ring */}
             <div className="absolute w-72 h-80 rounded-2xl bg-gradient-to-br from-blue-600/15 via-indigo-500/8 to-blue-400/5 blur-2xl animate-float" />

@@ -8,37 +8,18 @@ const EXPERIENCES = [
     role: 'Software Engineer',
     company: 'RBH Solutions Pvt. Limited',
     location: 'Patiala, Punjab',
-    period: 'April 2025 – Present',
+    period: 'January 2025 – Present',
     type: 'Full-Time',
     status: 'current',
     accent: 'blue',
     summary: 'Building enterprise SCADA/HMI systems for real-time industrial operations monitoring and automation.',
     bullets: [
       'Developing SCADA/HMI systems using Angular, ASP.NET Core, and SignalR for real-time operations monitoring',
-      'Creating dashboards and event views with live data streaming via SignalR hubs',
-      'Designing efficient PostgreSQL queries, triggers, and data models for system performance',
-      'Building CouchDB Map-Reduce views for operational data retrieval and reporting',
-      'Using Wireshark and protocol analyzers to debug real-time industrial communication',
-      'Automating substation reporting workflows using backend data extraction and processing',
-      'Contributing to UI/UX screens, backend services, and industrial field device integration',
+      'Designing PostgreSQL schemas, triggers, and CouchDB Map-Reduce views for high-performance data retrieval',
+      'Automating substation reporting workflows and integrating industrial field devices',
+      'Debugging real-time industrial communication with Wireshark and protocol analyzers',
     ],
     tags: ['Angular', 'ASP.NET Core', 'SignalR', 'PostgreSQL', 'CouchDB', 'Wireshark'],
-  },
-  {
-    role: 'Associate Trainee',
-    company: 'RBH Solutions Pvt. Limited',
-    location: 'Patiala, Punjab',
-    period: 'January 2025 – March 2025',
-    type: 'Training',
-    status: 'completed',
-    accent: 'indigo',
-    summary: 'Intensive full-stack training on SCADA development stack with hands-on module contributions.',
-    bullets: [
-      'Completed full-stack training focused on Angular, ASP.NET Core, PostgreSQL, and real-time systems',
-      'Assisted in developing small modules for SCADA dashboards and live data visualization',
-      'Participated in team code reviews and agile sprint workflows',
-    ],
-    tags: ['Angular', 'ASP.NET Core', 'PostgreSQL', 'Agile'],
   },
   {
     role: 'AI Development Intern',
@@ -109,8 +90,9 @@ export default function Experience() {
                       <div className="flex items-center gap-2 mb-1">
                         <h3 className={`text-lg font-bold ${a.text}`}>{exp.role}</h3>
                         {exp.status === 'current' && (
-                          <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 font-mono">
-                            Current
+                          <span className="inline-flex items-center gap-1.5 text-xs px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 font-mono">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                            Live
                           </span>
                         )}
                       </div>

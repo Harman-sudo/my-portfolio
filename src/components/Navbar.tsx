@@ -73,10 +73,11 @@ export default function Navbar() {
           <a
             href="/resume/developer_resume.pdf"
             download
-            className="hidden md:flex items-center gap-1.5 text-xs px-3.5 py-1.5 border border-blue-600/40 text-blue-600 dark:text-blue-400 rounded-md hover:bg-blue-600/10 hover:border-blue-600/70 transition-all duration-200"
+            className="flex items-center gap-1.5 text-xs font-semibold px-3.5 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded-md shadow-md shadow-blue-600/30 hover:shadow-blue-500/40 transition-all duration-200"
+            aria-label="Download Resume"
           >
             <Download size={12} />
-            Resume
+            <span className="hidden sm:inline">Resume</span>
           </a>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}

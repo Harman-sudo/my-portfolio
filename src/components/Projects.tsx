@@ -22,6 +22,29 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
+    id: 'posture',
+    title: 'Gym Posture Correction System',
+    subtitle: 'Computer Vision AI Fitness Coach',
+    type: 'Personal',
+    status: 'Completed',
+    year: '2024',
+    icon: <Eye size={22} />,
+    accent: 'indigo',
+    description:
+      'Real-time computer vision system for exercise posture analysis using MediaPipe pose estimation. Detects incorrect posture and gives corrective feedback based on body-angle thresholds collected from real gym sessions.',
+    architecture: 'Webcam Feed ──▶ OpenCV Pipeline ──▶ MediaPipe Pose ──▶ Keypoint Extraction ──▶ Angle Analyzer ──▶ Feedback Engine',
+    highlights: [
+      'Pre-trained MediaPipe Pose model for 33-keypoint body landmark detection',
+      'Body-angle thresholds calibrated using real-world gym session data',
+      'Rule-based comparison engine for instant posture correctness evaluation',
+      'Optimized OpenCV pipeline for smooth 30+ FPS real-time video processing',
+      'Corrective feedback overlaid directly on the video stream',
+    ],
+    tech: ['Python', 'OpenCV', 'MediaPipe', 'Computer Vision'],
+    liveUrl: 'https://exercise-monitoring-1.onrender.com/',
+    githubUrl: 'https://github.com/Harman-sudo/exercise-monitoring',
+  },
+  {
     id: 'scada',
     title: 'SCADA/HMI Monitoring Platform',
     subtitle: 'Enterprise Real-Time Industrial System',
@@ -84,29 +107,6 @@ const PROJECTS: Project[] = [
       'Secure message authorization — users only access their own conversations',
     ],
     tech: ['Angular', 'ASP.NET Core', 'SignalR', 'PostgreSQL', 'JWT'],
-  },
-  {
-    id: 'posture',
-    title: 'Gym Posture Correction System',
-    subtitle: 'Computer Vision AI Fitness Coach',
-    type: 'Personal',
-    status: 'Completed',
-    year: '2024',
-    icon: <Eye size={22} />,
-    accent: 'indigo',
-    description:
-      'Real-time computer vision system for exercise posture analysis using MediaPipe pose estimation. Detects incorrect posture and gives corrective feedback based on body-angle thresholds collected from real gym sessions.',
-    architecture: 'Webcam Feed ──▶ OpenCV Pipeline ──▶ MediaPipe Pose ──▶ Keypoint Extraction ──▶ Angle Analyzer ──▶ Feedback Engine',
-    highlights: [
-      'Pre-trained MediaPipe Pose model for 33-keypoint body landmark detection',
-      'Body-angle thresholds calibrated using real-world gym session data',
-      'Rule-based comparison engine for instant posture correctness evaluation',
-      'Optimized OpenCV pipeline for smooth 30+ FPS real-time video processing',
-      'Corrective feedback overlaid directly on the video stream',
-    ],
-    tech: ['Python', 'OpenCV', 'MediaPipe', 'Computer Vision'],
-    liveUrl: 'https://exercise-monitoring-1.onrender.com/',
-    githubUrl: 'https://github.com/Harman-sudo/exercise-monitoring',
   },
 ]
 

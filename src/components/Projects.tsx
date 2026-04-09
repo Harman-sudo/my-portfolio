@@ -16,6 +16,8 @@ type Project = {
   architecture: string
   highlights: string[]
   tech: string[]
+  liveUrl?: string
+  githubUrl?: string
 }
 
 const PROJECTS: Project[] = [
@@ -103,6 +105,8 @@ const PROJECTS: Project[] = [
       'Corrective feedback overlaid directly on the video stream',
     ],
     tech: ['Python', 'OpenCV', 'MediaPipe', 'Computer Vision'],
+    liveUrl: 'https://exercise-monitoring-1.onrender.com/',
+    githubUrl: 'https://github.com/Harman-sudo/exercise-monitoring',
   },
 ]
 
@@ -196,6 +200,32 @@ export default function Projects() {
                   </div>
                   <span className={`text-xs font-mono ${a.text} opacity-70`}>{p.year}</span>
                 </div>
+
+                {/* Links */}
+                {(p.liveUrl || p.githubUrl) && (
+                  <div className="flex items-center gap-3 pt-3 mt-1">
+                    {p.liveUrl && (
+                      <a
+                        href={p.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-1.5 text-xs ${a.text} hover:underline`}
+                      >
+                        <ExternalLink size={12} /> Live Demo
+                      </a>
+                    )}
+                    {p.githubUrl && (
+                      <a
+                        href={p.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-1.5 text-xs ${a.text} hover:underline`}
+                      >
+                        <Github size={12} /> GitHub
+                      </a>
+                    )}
+                  </div>
+                )}
               </motion.div>
             )
           })}

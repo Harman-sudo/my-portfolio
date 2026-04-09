@@ -1,4 +1,4 @@
-import { Linkedin, Mail } from 'lucide-react'
+import { Linkedin, Mail, Github, Code2 } from 'lucide-react'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -33,6 +33,22 @@ export default function Footer() {
 
         {/* Social icons */}
         <div className="flex items-center gap-3">
+          <a
+            href="https://github.com/Harman-sudo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg border border-[var(--c-border2)] text-[var(--c-text4)] hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500/30 transition-all"
+          >
+            <Github size={15} />
+          </a>
+          <a
+            href="https://leetcode.com/u/Harmanpreet_singh_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg border border-[var(--c-border2)] text-[var(--c-text4)] hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500/30 transition-all"
+          >
+            <Code2 size={15} />
+          </a>
           <a
             href="https://www.linkedin.com/in/harmanpreet-singh-online/"
             target="_blank"

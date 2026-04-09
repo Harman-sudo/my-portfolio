@@ -1914,6 +1914,9 @@ body {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity, 1));
 }
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
 .hover\:shadow-\[0_0_20px_rgba\(37\2c 99\2c 235\2c 0\.35\)\]:hover {
   --tw-shadow: 0 0 20px rgba(37,99,235,0.35);
   --tw-shadow-colored: 0 0 20px var(--tw-shadow-color);

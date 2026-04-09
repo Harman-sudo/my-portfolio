@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Terminal, Sun, Moon } from 'lucide-react'
+import { Menu, X, Download, Sun, Moon } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
 
 const NAV_LINKS = [
@@ -71,11 +71,12 @@ export default function Navbar() {
           </button>
 
           <a
-            href="mailto:preetharman2012003@gmail.com"
+            href="/resume/developer_resume.pdf"
+            download
             className="hidden md:flex items-center gap-1.5 text-xs px-3.5 py-1.5 border border-blue-600/40 text-blue-600 dark:text-blue-400 rounded-md hover:bg-blue-600/10 hover:border-blue-600/70 transition-all duration-200"
           >
-            <Terminal size={12} />
-            Hire Me
+            <Download size={12} />
+            Resume
           </a>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -102,10 +103,11 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="mailto:preetharman2012003@gmail.com"
+              href="/resume/developer_resume.pdf"
+              download
               className="mt-2 flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 border border-blue-600/30 rounded-md px-4 py-2 w-fit"
             >
-              <Terminal size={14} /> Get In Touch
+              <Download size={14} /> Download Resume
             </a>
           </div>
         </div>
